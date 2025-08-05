@@ -119,9 +119,9 @@ def schedule_reminders(recipients):
 # === Main Entry Point ===
 if __name__ == "__main__":
     try:
-        csv_path    = "C:/Users/blang/OneDrive/Google Forms Generator Code/recipients2.csv"
-        creds_path  = "C:/Users/blang/OneDrive/Google Forms Generator Code/client_secret_646864557402-kvjgts1aqs489e3a8nng2iqirh0ff0go.apps.googleusercontent.com.json"
-        token_path  = "C:/Users/blang/.credentials/cbdc_token.pickle"
+        csv_path    = CVS_PATH
+        creds_path  = CREDENTIALS_PATH
+        token_path  = TOKEN_PATH
 
         recipients = load_recipients(csv_path)
         if not recipients: sys.exit()
